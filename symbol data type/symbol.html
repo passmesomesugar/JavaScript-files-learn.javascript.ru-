@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    let id = Symbol();
+    let another_id = Symbol("id");
+
+    // similar symbols are not same:
+    let id1 = Symbol("id");
+    let id2 = Symbol("id");
+    alert(id1 == id2);
+  </script>
+</body>
+</html>

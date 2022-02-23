@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    let id = Symbol("id");
+
+    let user = {
+      name: "John",
+      age: 30,
+      [id]: 123
+    };
+
+    //printing using cycle
+    for (let key in user) alert(key); // name, age (свойства с ключом-символом нет среди перечисленных)
+
+    // does the same printing
+    alert(Object.keys(user));
+
+    // BUT! Works if printed this way:
+    alert("Straightforward printing: " + user[id]);
+  </script>
+
+</body>
+
+</html>
