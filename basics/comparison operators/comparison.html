@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+	<script>
+
+		alert(2 > 1); //t
+		alert(2 == 1);//f
+		alert(2 != 1);//t
+
+		let result = 5 > 4; // result is assigned to this var
+		alert(result); // true
+
+		// String comparison
+		alert('Z' > 'A'); // true
+		alert('Cats' > 'Carpet'); // true
+		alert('Mannual' > 'Man'); // true
+
+		// NOTE: String comparison is based on Unicode.
+
+		// Type cast while comparison:
+
+		alert('2' > 1); // true, строка '2' становится числом 2
+		alert('01' == 1); // true, строка '01' становится числом 1
+
+		alert(true == 1); // true
+		alert(false == 0); // true
+
+		// Paradox
+		let a = 0;
+		alert(Boolean(a)); // false
+
+		let b = "0";
+		alert(Boolean(b)); // true
+
+		alert(a == b); // true!
+
+		// ^ Above mentioned code behaviour due to different approaches while type casting the values.
+
+		// Regular comparison
+		alert(0 == false); // true
+		//Another example 
+		alert('' == false); // true
+	</script>
+
+</body>
+
+</html>
