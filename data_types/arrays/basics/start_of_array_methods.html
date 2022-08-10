@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+    // Shift removes first element and returns it: 
+    let fruits3 = ["Apple", "Orange", "Pear"];
+    alert(fruits.shift()); // удаляем Apple и выводим его
+    alert(fruits); // Orange, Pear
+
+    // Unshift adds element to beginning of arr
+    let fruits4 = ["Orange", "Pear"];
+    fruits.unshift('Apple');
+    alert(fruits); // Apple, Orange, Pear
+
+    // Shift and unshift can work with multiple elements:
+    let fruits5 = ["Apple"];
+    fruits.push("Orange", "Pear");
+    fruits.unshift("Pineapple", "Lemon");
+    alert(fruits);
+  </script>
+
+</body>
+
+</html>
