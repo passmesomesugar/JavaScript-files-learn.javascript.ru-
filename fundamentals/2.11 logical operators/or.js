@@ -2,6 +2,7 @@ console.log(true || true);   // true
 console.log(false || true);  // true
 console.log(true || false);  // true
 console.log(false || false); // false
+console.log(1 || 0); // true
 
 
 console.log("This returns first true value or last value");
